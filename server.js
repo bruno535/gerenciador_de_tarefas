@@ -2,7 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import Task from './src/models/task.js';
-import { mongoDbUser } from './src/MongoDb.js'
+import { mongoDbUser } from './MongoDb.js'
 
 mongoose.connect(mongoDbUser, {
   useNewUrlParser: true,
