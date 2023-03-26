@@ -2,8 +2,9 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import Task from './src/models/task.js';
+import { mongoDbUser } from './src/MongoDb.js'
 
-mongoose.connect('mongodb+srv://farzufadri:cqK5FMziLh4Fo4WJ@cluster0.uolkiby.mongodb.net/tasks?retryWrites=true&w=majority', {
+mongoose.connect(mongoDbUser, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
